@@ -10,24 +10,45 @@
 			rel="stylesheet"
 			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 			crossorigin="anonymous" />
-
-		<title>Document</title>
+		<link rel="stylesheet" href="css\style.css" />
+		<title>cfx-789</title>
 	</head>
-	<body class="bg-secondary">
-		<div>
-			<iframe
-				id="player"
-				style="border-radius: 12px"
-				width="100%"
-				height="352"
-				frameborder="0"
-				allowfullscreen=""
-				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-				loading="lazy"></iframe>
+	<body>
+		<nav class="navbar"></nav>
+		<div id="container" class="container-fluid">
+			<div
+				class="fs-5 alert alert-info alert-dismissible fade show"
+				role="alert">
+				<strong>Welcome!</strong> This site is a opportunity to preview
+				some of the music i listen to without needing a spotify account.
+				Just click the button and a song will be loaded.
+				<strong>Enjoy!</strong>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert"
+					aria-label="Close"></button>
+			</div>
+			<div class="spinner-border" id="spinner" role="status"></div>
+
+			<div>
+				<iframe
+					class="p-0 m-0 ratio ratio-16x9"
+					id="player"
+					width="100%"
+					height="352"
+					frameborder="0"
+					allowfullscreen="true"
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy">
+				</iframe>
+			</div>
+			<div class="d-grid gap-0">
+				<button id="button" type="button" class="btn btn-primary">
+					Get A Song
+				</button>
+			</div>
 		</div>
-		<button id="button" type="button" class="btn btn-primary">
-			Button
-		</button>
 
 		<!-- JavaScript Bundle with Popper -->
 		<script
@@ -39,6 +60,7 @@
 			integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"></script>
+
 		<script src="app.js"></script>
 	</body>
 </html>

@@ -1,0 +1,12 @@
+.row {
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+  background-image: url(https://media4.giphy.com/media/3gpfkdQIunv5C/giphy.gif?cid=790b761131cce55d1ee933353641f0b38b6fab3827c02015&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+/*# sourceMappingURL=style.css.map */
