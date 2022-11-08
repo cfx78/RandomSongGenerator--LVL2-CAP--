@@ -1,12 +1,14 @@
-.row {
-  margin: 0 auto;
-}
-
 body {
   background-color: black;
-  background-image: url(https://media4.giphy.com/media/3gpfkdQIunv5C/giphy.gif?cid=790b761131cce55d1ee933353641f0b38b6fab3827c02015&rid=giphy.gif&ct=g);
-  background-size: cover;
-  background-repeat: repeat-x;
+  background-image: url(https://64.media.tumblr.com/02cf88d5d0135a30d8922a17385b43d1/tumblr_msdbe0cMe61r0b2hgo2_400.gifv);
+  background-size: 100%;
+  bottom: 0%;
+  background-repeat: no-repeat;
+}
+
+#container {
+  position: absolute;
+  bottom: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
