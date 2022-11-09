@@ -17,7 +17,7 @@
 		<nav class="navbar navbar-expand navbar-dark bg-dark"></nav>
 		<div id="container" class="container-fluid">
 			<div
-				class="fs-5 alert alert-info alert-dismissible fade show"
+				class="fs-3 alert alert-dark alert-dismissible fade show"
 				role="alert">
 				<strong>Welcome!</strong> This site is a opportunity to preview
 				some of the music i listen to without needing a spotify account.
@@ -44,7 +44,7 @@
 				</iframe>
 			</div>
 			<div class="d-grid gap-0">
-				<button id="button" type="button" class="btn btn-primary">
+				<button id="button" type="button" class="btn btn-outline-light">
 					Get A Song
 				</button>
 			</div>
@@ -60,6 +60,11 @@
 			integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"></script>
+		<script>
+			$(document).ready(function () {
+				$('html, body').pagefade(1000, 1000);
+			});
+		</script>
 
 		<script src="app.js"></script>
 	</body>

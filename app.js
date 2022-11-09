@@ -1,8 +1,24 @@
+(function ($) {
+	$.fn.pagefade = function (fadein, fadeout) {
+		this.css('display', 'none');
+		this.fadeIn(fadein);
+		$('a').click(function (event) {
+			event.preventDefault();
+			linkLocation = this.href;
+			this.fadeOut(fadeout, redirectPage);
+		});
+		function redirectPage() {
+			window.location.disabled = linkLocation;
+		}
+		return this;
+	};
+})(jQuery);
+
 function selectedTrack() {
 	var myHeaders = new Headers();
 	myHeaders.append(
 		'Authorization',
-		'Bearer BQCiDtL_yfv85dbDGkx644KVjecrwykJTeqpYk-bd1Z_PryfRAZzjGXZjoXPZZTvEdHQSM0eotY2bRZKnvTq005lKZ5aqu3EI6tnCaDcjcE3f8v7Gy8hTKUty3MCIlE4cStT-3fim9r_KomJhHyLAXcCRcWcH1LMgC1c9gXhC4pyjTEtuWZ693FUO_NS_yrfv3HphLOzrn-kxFf3CFl7qxny',
+		'Bearer BQBLDI1KDroLMNkpjHUGp4-R0fJBUHsnxS7tJ5YiJty9wIclHXMzV1Ra6n0RpXn3Y4VSR6F02Jya0PIbcNJPutKbmRDqSJMmsldL4O98S4YVAn3xIkZ0lo11PQsUcbICZrioJlU3qFMcf2lKZEIsp8fXrdRNNt2u_jtrPPJrcI9tdHUDeu09MkCBDbQSWxIITu_KajdKEFxzeekJi3irJ_o5',
 	);
 
 	var requestOptions = {
