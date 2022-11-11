@@ -1,3 +1,4 @@
+// jQuery fade in plugin
 (function ($) {
 	$.fn.pagefade = function (fadein, fadeout) {
 		this.css('display', 'none');
@@ -14,11 +15,14 @@
 	};
 })(jQuery);
 
+// $('form').slideUp();
+
+// function to get the random song
 function selectedTrack() {
 	var myHeaders = new Headers();
 	myHeaders.append(
 		'Authorization',
-		'Bearer BQAui_zAg1dB_N27IuzMPI3jEabUCTuzB-YGl6HnY1NLJvJukVmSYWJB3EgSn63a7aZx3AM9lzqlBzBn_OSYMn3hIN2smmRj0br8H1JkFTfLILTzi7NxPkUiLn-_sShHe2oqI6yg7-Ilmwh8o13iKN_0Fam7WYtq-JzxPdbZdROMJxyngDLAkJv_f1NoHAdu8JImpbFA6ZZ5evYCUTRoCcy3',
+		'Bearer BQDzWT5FwdfM2uWfrbUa2icUXfced0WvEDBd9GVDuXTNTBXyYR2g_3F0_snquT5ylbmQlekxubpt80LE_0Q4W6vdVTH6f_XTl3nkiEZeFAa89n8izMzVNs3GFCs4nkF9xr-_WYRuhibqFpmuCFihnlcBNP1oLEJ3ScYaZzw12_yCpftatc0P6eYorwDMEpt5IpvTYJ5re6PdSyO-ed0_Qvej',
 	);
 
 	var requestOptions = {
@@ -47,7 +51,31 @@ function selectedTrack() {
 		.catch((error) => console.log('error', error));
 }
 
+// CLick event for selectedTrack function
+
 document.getElementById('button').addEventListener('click', selectedTrack);
+
 $(document).ready(function () {
 	$('.spinner-border').hide();
+});
+
+// Inserting user input to alert box
+// let user = document.getElementById('user-name');
+// let submit = document.getElementById('submit');
+
+// submit.addEventListener('click', function () {
+// 	greet.innerHTML = 'Hi' + user.value;
+
+// });
+$(function () {
+	$('#btnShow').click(function () {
+		let alert = document.getElementById('alert');
+		let name = $('#txtName').val();
+		$('form').remove();
+
+		alert.innerHTML =
+			'<strong>' +
+			name +
+			'</strong> If you wanna know why he is dancing in the background, just click the button below!(You should get rid of me first though...)<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+	});
 });

@@ -1,3 +1,10 @@
+@mixin center {
+	z-index: 999;
+	height: 1.1rem;
+	top: 20%;
+	position: relative;
+}
+
 body {
 	width: 100%;
 	background-size: cover;
@@ -10,8 +17,16 @@ body {
 }
 
 #container {
-	z-index: 999;
-	height: 1.1rem;
-	top: 20%;
-	position: relative;
+	@include center;
+}
+
+form {
+	@include center;
+	top: 8%;
+	width: 60%;
+	margin: 0 auto;
+}
+
+#alert {
+	margin-top: 5rem;
 }

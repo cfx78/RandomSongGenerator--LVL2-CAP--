@@ -14,20 +14,25 @@
 		<title>cfx-789</title>
 	</head>
 	<body class="border border-light">
-		<nav class="navbar navbar-expand navbar-dark bg-dark"></nav>
+		<!-- <nav class="navbar navbar-expand navbar-dark bg-dark"></nav> -->
+		<form action="" method="">
+			<div class="bg-gradient rounded-2 text-center py-4">
+				<p class="fs-2 text-light">Whats your name?</p>
+				<input
+					class="rounded-3 p-1"
+					type="text"
+					name="user-name"
+					id="txtName"
+					placeholder="Enter Name..." />
+				<input id="btnShow" type="button" value="Submit" />
+			</div>
+		</form>
 		<div id="container" class="container-fluid">
 			<div
-				class="fs-3 alert alert-dark alert-dismissible fade show"
+				id="alert"
+				class="text-center fs-3 alert alert-dark alert-dismissible fade show"
 				role="alert">
-				<strong>Welcome!</strong> This site is a opportunity to preview
-				some of the music i listen to without needing a spotify account.
-				Just click the button and a song will be loaded.
-				<strong>Enjoy!</strong>
-				<button
-					type="button"
-					class="btn-close"
-					data-bs-dismiss="alert"
-					aria-label="Close"></button>
+				<strong>Welcome!</strong>To get started,enter your name above!
 			</div>
 			<div class="spinner-border" id="spinner" role="status"></div>
 
