@@ -21,7 +21,7 @@ function selectedTrack() {
 	let myHeaders = new Headers();
 	myHeaders.append(
 		'Authorization',
-		'Bearer BQAdwwDXWrLHCcZ1d1MsdQ1asHy1LGrVlAbm5MILcyXR1LGIvEOuHBCxAjvrX7fBW_cGG9nn-hdAQiu1wI4-CeknSrWUo5cGsSKPMNoW9iqQvSlUTwDrMD6JJOGpMk1npsLumqDgFLcnOtkp3dgFQxDsnjSHzB4VyBNdZ2iMSuCT4gqkl_DzfgUCG8_OkOXmfJns7FtipJYlb-9VDOFRdO7y',
+		'Bearer BQBsRGTUioxWKo2r7Ms4iARfbguqFdotvctN_bcB0ixBEqlHd7-Qm6JVu6FbvmsSqvT9isYrGe3hOEA3LzKGuofsY17exBRcc6LStWCr7Wby6keTx8-wKHPb733Z4YN_0fOMDEpZuA3AWDLso3Z23NCJvn-VKudlhiYcGAipNCX1VfU7LSTkcqaPSNy64C0f8gVaBjEqQZDoVcSeYcOfo0dR',
 	);
 
 	let requestOptions = {
