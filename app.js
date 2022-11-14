@@ -27,7 +27,7 @@ function selectedTrack() {
 	let requestOptions = {
 		method: 'GET',
 		headers: myHeaders,
-		redirect: follow,
+		redirect: 'follow',
 	};
 
 	fetch(
