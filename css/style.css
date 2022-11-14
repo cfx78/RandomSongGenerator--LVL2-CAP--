@@ -10,16 +10,16 @@ body {
 }
 
 #container {
-  z-index: 999;
+  z-index: 1;
   height: 1.1rem;
-  top: 20%;
   position: relative;
+  width: 80vw;
+  top: 25%;
 }
 
 form {
-  z-index: 999;
+  z-index: 1;
   height: 1.1rem;
-  top: 20%;
   position: relative;
   top: 8%;
   width: 60%;
@@ -28,6 +28,10 @@ form {
 
 #alert {
   margin-top: 5rem;
+}
+
+#player {
+  height: 30vh;
 }
 
 /*# sourceMappingURL=style.css.map */

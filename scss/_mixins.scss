@@ -1,3 +1,9 @@
 @mixin for-player {
-	height: fit-content;
+	height: 30vh;
+}
+
+@mixin center {
+	z-index: 1;
+	height: 1.1rem;
+	position: relative;
 }
