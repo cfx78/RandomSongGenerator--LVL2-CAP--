@@ -21,7 +21,7 @@ function selectedTrack() {
 	let myHeaders = new Headers();
 	myHeaders.append(
 		'Authorization',
-		'Bearer BQBsRGTUioxWKo2r7Ms4iARfbguqFdotvctN_bcB0ixBEqlHd7-Qm6JVu6FbvmsSqvT9isYrGe3hOEA3LzKGuofsY17exBRcc6LStWCr7Wby6keTx8-wKHPb733Z4YN_0fOMDEpZuA3AWDLso3Z23NCJvn-VKudlhiYcGAipNCX1VfU7LSTkcqaPSNy64C0f8gVaBjEqQZDoVcSeYcOfo0dR',
+		'Bearer BQDTChrWtMWbqebCJi045wgBA3N8Y9xZGgqCzujBJgMW28lmO9jcuBQiafDaQGlFxHQX6IRW86hrRxVt87SfiZKc5zZTDvaveDZrlLV1EcwbZHnzHnJI03_nHqzf_PQK4p0vsyZCosSVY-bGZnSNtmVnlsSsIL0tNt1vHFxMbmNtxUSw3DZndDuAOWc5LI30xMwq3GCUwrYoVyJ5g6A1VrIh',
 	);
 
 	let requestOptions = {
@@ -37,8 +37,8 @@ function selectedTrack() {
 		.then((response) => response.json())
 		.then(function (result) {
 			let idArray = result.tracks.items;
-			let getTracks = idArray.map(function (obj) {
-				return obj.track.id;
+			let getTracks = idArray.map(function (track) {
+				return track.track.id;
 			});
 			let randomTrack =
 				getTracks[Math.floor(Math.random() * getTracks.length)];
